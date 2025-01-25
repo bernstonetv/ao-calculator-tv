@@ -75,11 +75,30 @@
     <div class="table-container">
         <table>
             <tr>
-                <td>Tier</td><td><input type="number" id="tierInput" value="5" oninput="calculatePQ()"></td>
+                <td>Tier</td>
+                <td>
+                    <select id="tierInput" onchange="calculatePQ()">
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5" selected>5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                    </select>
+                </td>
                 <td colspan="4"></td>
             </tr>
             <tr>
-                <td>Enchantment</td><td><input type="number" id="enchantmentInput" value="3" oninput="calculatePQ()"></td>
+                <td>Enchantment</td>
+                <td>
+                    <select id="enchantmentInput" onchange="calculatePQ()">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3" selected>3</option>
+                    </select>
+                </td>
                 <td colspan="4"></td>
             </tr>
             <tr>
